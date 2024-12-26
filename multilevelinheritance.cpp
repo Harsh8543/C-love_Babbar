@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+class Animal{
+    public:
+    int age;
+    int weight;
+
+    public:
+    void speak(){
+        cout<<"speaking"<<endl;
+    }
+};
+class Dog:public Animal{
+
+};
+class germanspherd:public Dog{
+
+};
+
+
+int main(){
+    germanspherd d;
+    d.speak();
+cout<<d.age<<endl;
+    return 0;
+}
